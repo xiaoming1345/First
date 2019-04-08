@@ -2,8 +2,13 @@
     <string name="app_name">First</string>
     <string name="result">结果为：</string>
     <string name="btn">计算</string>
-    <string name="hint">"请输入摄氏度"</string>
+    <string name="hint">请输入摄氏度</string>
     <string name="lable_add1" tools:ignore="MissingTranslation">+1 point</string>
     <string name="lable_add2" tools:ignore="MissingTranslation">+2 points</string>
     <string name="lable_add3" tools:ignore="MissingTranslation">+3 points</string>
+    <string name="btn_dollar_label" tools:ignore="MissingTranslation">Dollar</string>
+    <string name="btn_euro_label" tools:ignore="MissingTranslation">Euro</string>
+    <string name="btn_won_label" tools:ignore="MissingTranslation">Won</string>
+    <string name="rmb_hint" tools:ignore="MissingTranslation">Input RMB</string>
+    <string name="btn_int" tools:ignore="MissingTranslation">计分</string>
 </resources>
