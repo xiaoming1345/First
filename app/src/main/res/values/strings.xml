@@ -1,5 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">First</string>
-    <string name="hello">hello</string>
-    <string name="dear">dear stranger</string>
+    <string name="result">结果为：</string>
+    <string name="btn">计算</string>
+    <string name="hint">"请输入摄氏度"</string>
+    <string name="lable_add1" tools:ignore="MissingTranslation">+1 point</string>
+    <string name="lable_add2" tools:ignore="MissingTranslation">+2 points</string>
+    <string name="lable_add3" tools:ignore="MissingTranslation">+3 points</string>
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">你好</string>
+    <string name="result">结果为：</string>
     <string name="app_name">第一</string>
-    <string name="dear">亲爱的陌生人</string>
+    <string name="btn">计算</string>
+    <string name="hint">"请输入摄氏度"</string>
 </resources>
