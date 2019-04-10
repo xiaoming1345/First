@@ -10,5 +10,10 @@
     <string name="btn_euro_label" tools:ignore="MissingTranslation">Euro</string>
     <string name="btn_won_label" tools:ignore="MissingTranslation">Won</string>
     <string name="rmb_hint" tools:ignore="MissingTranslation">Input RMB</string>
-    <string name="btn_int" tools:ignore="MissingTranslation">计分</string>
+    <string name="btn_int" tools:ignore="MissingTranslation">modify</string>
+    <string name="rate_dollar" tools:ignore="MissingTranslation">dollar</string>
+    <string name="rate_euro" tools:ignore="MissingTranslation">euro</string>
+    <string name="rate_won" tools:ignore="MissingTranslation">won</string>
+    <string name="btn_return_label" tools:ignore="MissingTranslation">return</string>
+    <string name="btn_set_label" tools:ignore="MissingTranslation">setting</string>
 </resources>
