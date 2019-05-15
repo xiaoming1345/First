@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Modifyrate extends AppCompatActivity {
+public class ConfigActivity extends AppCompatActivity {
 
-    public final String TAG = "Modifyrate";
+    public final String TAG = "ConfigActivity";
 
     TextView btn;
 
@@ -21,7 +21,7 @@ public class Modifyrate extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modifyrate);
+        setContentView(R.layout.activity_config);
 
         Intent i = getIntent();
         float dollar2=i.getFloatExtra("dollar_rate_key",0.0f);
@@ -32,9 +32,9 @@ public class Modifyrate extends AppCompatActivity {
         Log.i(TAG,"onCreate:euro2="+euro2);
         Log.i(TAG,"onCreate:won2="+won2);
 
-        dollarText = (EditText)findViewById(R.id.dollar);
-        euroText = (EditText)findViewById(R.id.euro);
-        wonText = (EditText)findViewById(R.id.won);
+        dollarText = findViewById(R.id.dollar);
+        euroText = findViewById(R.id.euro);
+        wonText = findViewById(R.id.won);
 
         dollarText.setText(String.valueOf(dollar2));
         euroText.setText(String.valueOf(euro2));
