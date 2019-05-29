@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FrameActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_main"
+        android:name="cn.edu.swufe.first.HomeFragment"
+        android:layout_weight="10"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_func"
+        android:name="cn.edu.swufe.first.FuncFragment"
+        android:layout_weight="10"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_setting"
+        android:name="cn.edu.swufe.first.SettingFragment"
+        android:layout_weight="10"/>
+
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/rg_btn_style"
+            android:id="@+id/radioHome"
+            android:text="@string/rdo_home_label"
+            android:drawableTop="@drawable/a"/>
+        <RadioButton
+            style="@style/rg_btn_style"
+            android:id="@+id/radioFunc"
+            android:text="@string/rdo_func_label"
+            android:drawableTop="@drawable/b"/>
+        <RadioButton
+            style="@style/rg_btn_style"
+            android:id="@+id/radioSetting"
+            android:text="@string/rdo_setting_label"
+            android:drawableTop="@drawable/c"/>
+    </RadioGroup>
+
+</LinearLayout>
