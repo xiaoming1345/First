@@ -17,8 +17,8 @@
     <string name="btn_return_label" tools:ignore="MissingTranslation">return</string>
     <string name="btn_set_label" tools:ignore="MissingTranslation">setting</string>
     <string name="label_open_list" tools:ignore="MissingTranslation">OpenList</string>
-    <string name="rdo_home_label" tools:ignore="MissingTranslation">首页</string>
-    <string name="rdo_func_label" tools:ignore="MissingTranslation">功能</string>
-    <string name="rdo_setting_label" tools:ignore="MissingTranslation">设置</string>
+    <string name="rdo_home_label" tools:ignore="MissingTranslation">动物</string>
+    <string name="rdo_func_label" tools:ignore="MissingTranslation">建筑</string>
+    <string name="rdo_setting_label" tools:ignore="MissingTranslation">城市</string>
 
 </resources>

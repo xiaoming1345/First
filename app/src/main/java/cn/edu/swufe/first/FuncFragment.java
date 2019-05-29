@@ -20,6 +20,6 @@ public class FuncFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
         TextView tv = (TextView)getView().findViewById(R.id.funcTextView1);
-        tv.setText("这是功能页面");
+        tv.setText("建筑是建筑物与构筑物的总称，是人们为了满足社会生活需要，利用所掌握的物质技术手段，并运用一定的科学规律、风水理念和美学法则创造的人工环境。");
     }
 }

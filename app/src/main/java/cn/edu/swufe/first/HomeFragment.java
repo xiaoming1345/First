@@ -19,7 +19,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        TextView tv = (TextView)getView().findViewById(R.id.homeTextView1);
-        tv.setText("这是主页面");
+        TextView tv = getView().findViewById(R.id.homeTextView1);
+        tv.setText("动物 ，生物的一个种类。它们一般以有机物为食，能感觉，可运动，能够自主运动。活动或能够活动之物。");
     }
 }

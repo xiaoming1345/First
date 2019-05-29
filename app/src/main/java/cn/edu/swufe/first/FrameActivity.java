@@ -1,5 +1,6 @@
 package cn.edu.swufe.first;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -32,9 +33,25 @@ public class FrameActivity extends FragmentActivity {
         fragmentTransaction.show(mFragments[0]).commit();
 
         rbtHome = findViewById(R.id.radioHome);
-        rbtFunc = findViewById(R.id.radioFunc);
-        rbtSetting = findViewById(R.id.radioSetting);
+        Drawable drawable1 = getResources().getDrawable(R.drawable.a);//找到图片
+        drawable1.setBounds(0, 0, 60, 60);//最关键的一步，给图片设置大小,4个参数分别是左上右下，我看好多人对这个左上右下不理解，看下源码
+        rbtHome.setCompoundDrawables(null, drawable1, null, null);
         rbtHome.setBackgroundResource(R.drawable.shape3);
+
+        rbtFunc = findViewById(R.id.radioFunc);
+        Drawable drawable2 = getResources().getDrawable(R.drawable.b);//找到图片
+        drawable2.setBounds(0, 0, 60, 60);//最关键的一步，给图片设置大小,4个参数分别是左上右下，我看好多人对这个左上右下不理解，看下源码
+        rbtFunc.setCompoundDrawables(null, drawable2, null, null);
+        rbtFunc.setBackgroundResource(R.drawable.shape3);
+
+        rbtSetting = findViewById(R.id.radioSetting);
+        Drawable drawable3 = getResources().getDrawable(R.drawable.c);//找到图片
+        drawable3.setBounds(0, 0, 60, 60);//最关键的一步，给图片设置大小,4个参数分别是左上右下，我看好多人对这个左上右下不理解，看下源码
+        rbtSetting.setCompoundDrawables(null, drawable3, null, null);
+        rbtSetting.setBackgroundResource(R.drawable.shape3);
+
+
+
 
         radioGroup = findViewById(R.id.bottomGroup);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -54,11 +71,11 @@ public class FrameActivity extends FragmentActivity {
                         break;
                     case R.id.radioFunc:
                         fragmentTransaction.show(mFragments[1]).commit();
-                        rbtHome.setBackgroundResource(R.drawable.shape3);
+                        rbtFunc.setBackgroundResource(R.drawable.shape3);
                         break;
                     case R.id.radioSetting:
                         fragmentTransaction.show(mFragments[2]).commit();
-                        rbtHome.setBackgroundResource(R.drawable.shape3);
+                        rbtSetting.setBackgroundResource(R.drawable.shape3);
                         break;
                     default:
                         break;
